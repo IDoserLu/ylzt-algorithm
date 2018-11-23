@@ -1,6 +1,6 @@
-package com.ylzt.algorithm.struct.stack;
+package com.ylzt.algorithm.study.struct.stack;
 /**
- * Êı×éÊµÏÖÕ»
+ * æ•°ç»„å®ç°æ ˆ
  * @author Administrator
  *
  */
@@ -14,7 +14,7 @@ public class ArrayStack {
 	}
 	
 	/**
-	 * Ñ¹Èë²Ù×÷
+	 * å‹å…¥æ“ä½œ
 	 * @param item
 	 * @return
 	 */
@@ -25,7 +25,7 @@ public class ArrayStack {
 		return true;
 	}
 	/**
-	 * µ¯³ö²Ù×÷
+	 * å¼¹å‡ºæ“ä½œ
 	 * @return
 	 */
 	public String pop() {

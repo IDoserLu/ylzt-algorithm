@@ -1,6 +1,6 @@
-package com.ylzt.algorithm.struct.queue;
+package com.ylzt.algorithm.study.struct.queue;
 /**
- * Ñ­»·¶ÓÁÐÊý×éµÄÊµÏÖ
+ * å¾ªçŽ¯é˜Ÿåˆ—æ•°ç»„çš„å®žçŽ°
  * @author Administrator
  *
  */
@@ -16,7 +16,7 @@ public class CircularQueue {
 	}
 	
 	/**
-	 * Èë¶Ó
+	 * å…¥é˜Ÿ
 	 * @param item
 	 * @return
 	 */
@@ -27,7 +27,7 @@ public class CircularQueue {
 		return true;
 	}
 	/**
-	 * ³ö¶Ó
+	 * å‡ºé˜Ÿ
 	 * @return
 	 */
 	public String dequeue() {

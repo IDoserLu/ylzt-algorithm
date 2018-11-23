@@ -1,6 +1,6 @@
-package com.ylzt.algorithm.struct.queue;
+package com.ylzt.algorithm.study.struct.queue;
 /**
- * Êı×é¶ÓÁĞµÄÊµÏÖ
+ * æ•°ç»„é˜Ÿåˆ—çš„å®ç°
  * @author Administrator
  *
  */
@@ -16,7 +16,7 @@ public class ArrayQueue {
 	}
 	
 	/**
-	 * Èë¶Ó
+	 * å…¥é˜Ÿ
 	 * @param item
 	 * @return
 	 */
@@ -27,7 +27,7 @@ public class ArrayQueue {
 		return true;
 	}
 	/**
-	 * ³ö¶Ó
+	 * å‡ºé˜Ÿ
 	 * @return
 	 */
 	public String dequeue() {
@@ -38,20 +38,20 @@ public class ArrayQueue {
 	}
 	
 	/**
-	 * ÁíÒ»ÖÖÈë¶Ó²Ù×÷
+	 * å¦ä¸€ç§å…¥é˜Ÿæ“ä½œ
 	 * @param item
 	 * @return
 	 */
 	public boolean enqueue1(String item) {
 		if(tail==length) {
-			if(head==0) return false;//Õû¸ö¶ÓÁĞ¶¼Âú
+			if(head==0) return false;//æ•´ä¸ªé˜Ÿåˆ—éƒ½æ»¡
 			for(int i=head;i<tail;i++) {
 				items[i-head]=items[i];
 			}
 			tail=tail-head;
 			head=0;
 		}
-		//Êı×é°áÍêÖ®ºóÔÙ´ÎÈë¶Ó
+		//æ•°ç»„æ¬å®Œä¹‹åå†æ¬¡å…¥é˜Ÿ
 		items[tail]=item;
 		tail++;
 		return true;
