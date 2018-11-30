@@ -1,6 +1,10 @@
 package com.ylzt.algorithm.study.sort;
 
+import java.util.Arrays;
+
 public class BubbleSort {
+	private static int[] array=new int[] {6,5,4,2,1};
+	
 	/***
 	 * 冒泡排序  
 	 *  len = 6
@@ -17,6 +21,12 @@ public class BubbleSort {
 				}
 			}
 		}
+	}
+	
+	public static void main(String args[]) {
+		sort(array);
+		System.out.println(Arrays.toString(array));
+		
 	}
 	
 }
