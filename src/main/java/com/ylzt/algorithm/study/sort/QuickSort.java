@@ -1,5 +1,7 @@
 package com.ylzt.algorithm.study.sort;
 
+import java.util.Arrays;
+
 public class QuickSort {
 	public static void sort(int[] arr,int low,int high){
 		int i = low;
@@ -27,9 +29,16 @@ public class QuickSort {
 		temp1 = arr[low];
 		arr[low] = arr[i];
 		arr[i] = temp1;
+		System.out.println(Arrays.toString(arr));
 		sort(arr,low,i-1);
 		sort(arr,i+1,high);
 	}
 
+	public static void main(String args[]) {
+		int[] array=new int[] {5,9,7,5,8,9};
+		System.out.println(Arrays.toString(array));
+		sort(array,0,array.length-1);
+		System.out.println(Arrays.toString(array));
+	}
 
 }
